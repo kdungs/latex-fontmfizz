@@ -1,0 +1,25 @@
+fontmfizz -- Vector Icons for Technology and Software Geeks
+
+Font Mfizz provides scalable vector icons representing programming languages,
+operating systems, software engineering, and technology.
+The included "font-mfizz" free font is designed by MFizz Inc, Joe Lauer and
+released under the open The MIT License (available at
+http://opensource.org/licenses/MIT). See http://mfizz.com/oss/font-mfizz for
+more details about the font itself.
+
+This package requires the "fontspec" package and either the Xe(La)TeX or
+Lua(La)TeX engine to load the included ttf font.
+
+Once the package is loaded, icons can be accessed through the general \mficon
+command, which takes as argument the name of the desired icon, or through direct
+commands specific to each icon. The full list of icon designs, names and direct
+commands is showcased in the manual.
+
+Font MFizz font
+Author: MFizz Inc, Joe Lauer
+Website: http://mfizz.com/oss/font-mfizz
+Licence: MIT License
+
+fontmfizz package
+Author: Kevin Dungs <kevin.dungs@gmail.com>
+Licence: MIT License
