@@ -1,0 +1,24 @@
+%% start of file `fontmfizz.sty'.
+%% Copyright 2014 Kevin Dungs (kevin.dungs@gmail.com).
+%
+% This is inspired by the fontawesome.sty by Xavier Danaux
+% See http://mirror.ctan.org/fonts/fontawesome/
+%
+% This work may be distributed and/or modified under the
+% conditions of the MIT License, available at
+% http://opensource.org/licenses/MIT.
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{fontmfizz}[\VAR{date}]
+
+\usepackage{fontspec}
+
+\newfontfamily{\MF}{font-mfizz}
+\newcommand*{\mficon}[1]{%
+  {FA\csname mficon@#1\endcsname}}
+
+\BLOCK{ for icon in icons }
+\expandafter\def\csname mficon@\VAR{icon.name}\endcsname {\symbol{"F\VAR{icon.code}}} \def\\VAR{icon.name} {{\MF\csname mficon@\VAR{icon.name}\endcsname}}
+\BLOCK{ endfor }
+
+\endinput
